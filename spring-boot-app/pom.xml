@@ -9,15 +9,12 @@
     <version>1.0</version>
 
     <name>spring-boot-demo</name>
-
-    <!-- Fill in project URL if available -->
-    <url>https://example.com/spring-boot-demo</url>
+    <url></url>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <!-- Update to the latest stable version -->
-        <version>2.6.4</version>
+        <version>2.2.4.RELEASE</version>
     </parent>
 
     <properties>
@@ -28,6 +25,7 @@
     </properties>
 
     <dependencies>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -41,16 +39,20 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
         <!-- debugging -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <optional>true</optional>
         </dependency>
+
     </dependencies>
 
     <build>
+
         <finalName>spring-boot-web</finalName>
+
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -65,18 +67,9 @@
                     <target>${java.version}</target>
                 </configuration>
             </plugin>
+
         </plugins>
     </build>
 
-    <distributionManagement>
-        <repository>
-            <id>maven-releases</id>
-            <url>http://51.20.77.182:8081/repository/maven-releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>maven-snapshots</id>
-            <url>http://51.20.77.182:8081/repository/maven-snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
-   
+
 </project>
